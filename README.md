@@ -1,16 +1,14 @@
 # claude-skills
 
-My own twist on Claude skills — a small collection of `SKILL.md` files I use with Claude Code to get more consistent results out of the tasks I repeat most: writing commits, analysing websites, and designing web interfaces.
+My own twist on Claude skills — a small collection of `SKILL.md` files I use with Claude Code to get more consistent results out of the tasks I repeat most: writing commits, analyzing websites, and designing web interfaces.
 
-Each skill is a self-contained folder with a single `SKILL.md`. No dependencies, no build step.
+Each skill is a self-contained folder: a `SKILL.md` Claude Code reads, and a `README.md` explaining it for you. No dependencies, no build step.
 
-## What's inside
+## Skills
 
-| Skill | What it does |
-| --- | --- |
-| [commit-message](commit-message/SKILL.md) | Reads `git diff HEAD` and writes a structured commit message — title, short context, bulleted changes including renames and deletions. |
-| [web-analysis](web-analysis/SKILL.md) | Analyses a website or app from a link: design patterns, layout, colour scheme and typography, plus the practical details (purpose, features, contact info, locations, opening hours), condensed into a short summary. |
-| [web-design](web-design/SKILL.md) | The big one. Builds and redesigns web interfaces with a deliberate visual point of view — how to derive a design direction from the subject instead of defaulting to it, a catalogue of what makes UI read as AI-generated (colour, type, layout, spacing, components, effects, motion, copy), an anti-default audit, and pass/fail verification gates for accessibility and interaction states. |
+- **[commit-message](commit-message/README.md)** — a `git log` you can read back. Every commit gets a title, the reason, and what actually moved, written from the diff rather than the conversation.
+- **[web-analysis](web-analysis/README.md)** — paste a link, get the whole site in one summary: what it does, how it's designed, and the details you'd otherwise click through four pages to find.
+- **[web-design](web-design/README.md)** — web interfaces that don't look like every other AI-built page, with the keyboard access and interaction states that usually go missing.
 
 ## Installing
 
